@@ -101,7 +101,7 @@
     document.querySelectorAll("video").forEach((v) => v.pause());
     setTimeout(() => {
       alert(
-        `⚠️ Kamu sudah scroll lebih dari ${site.limit} ${site.unit} di ${site.name}!\n\nSaatnya berhenti dan istirahat.`
+        `⚠️ You already scrolled ${site.limit} ${site.unit} on ${site.name}!\n\nIt's time to stop and do some work again.`
       );
     }, 100);
   }
