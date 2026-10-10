@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Doomscroll Alert",
+  "version": "2.0",
+  "description": "Shows you alert when you scroll too much on Youtube short, Tiktok, Twitter or X.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.youtube.com/*",
+        "https://*.tiktok.com/*",
+        "https://x.com/*",
+        "https://*.x.com/*",
+        "https://twitter.com/*",
+        "https://*.twitter.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
